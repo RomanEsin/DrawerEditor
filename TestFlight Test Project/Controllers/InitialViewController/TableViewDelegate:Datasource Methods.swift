@@ -22,12 +22,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell") as! ItemCell
         
         cell.setupWithData(tableViewCellData[indexPath.section][indexPath.row])
+        cell.delegate = self
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        createEditableView(frame: CGRect(origin: CGPoint(x: (view.frame.width / 2) - 50, y: 200), size: CGSize(width: 100, height: 100)), cornerRadius: 20, fillColor: .red)
+//        createEditableView(frame: CGRect(origin: CGPoint(x: (view.frame.width / 2) - 50, y: 200), size: CGSize(width: 100, height: 100)), cornerRadius: 20, fillColor: .red)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

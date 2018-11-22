@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet var itemTableView: ItemTableView!
+    var editableViews = [EditableView]()
     
     var tableViewCellData: [[ItemCellData]] = [[], []]
     var animations: [UITableView.RowAnimation] = [.automatic, .bottom, .left, .middle, .right, .fade]
@@ -43,6 +44,7 @@ class ViewController: UIViewController {
         
         view.addSubview(itemTableView)
         itemTableView.center.y += 400
+        
     }
     
     func createEditableView(frame: CGRect, cornerRadius: CGFloat, fillColor: UIColor) {
@@ -51,5 +53,20 @@ class ViewController: UIViewController {
         editableView.backgroundColor = fillColor
         
         view.addSubview(editableView)
+        editableViews.append(editableView)
+    }
+    
+    func createEditableViewAt(_ location: CGPoint, cornerRadius: CGFloat, fillColor: UIColor) {
+        let editableView = EditableView(frame: CGRect(origin: .zero, size: CGSize(width: 100, height: 100)))
+        editableView.center = location
+        #warning("Corner radius function")
+        #warning("Ex: return 1 / 4 width")
+//        cornerRadius: (CGFloat) -> CGFloat
+//        editableView.layer.cornerRadius = cornerRadius(editableView.frame.width)
+        editableView.layer.cornerRadius = cornerRadius
+        editableView.backgroundColor = fillColor
+        
+        view.addSubview(editableView)
+        editableViews.append(editableView)
     }
 }

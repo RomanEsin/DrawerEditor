@@ -14,6 +14,8 @@ class ItemCell: UITableViewCell {
     @IBOutlet weak var objectNameLabel: UILabel!
     @IBOutlet weak var objectDescriptionLabel: UILabel!
     
+    var delegate: ItemCellDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -30,6 +32,11 @@ class ItemCell: UITableViewCell {
         }
         objectNameLabel.text = data.title
         objectDescriptionLabel.text = data.description
+        
+        let longPressGR = UILongPressGestureRecognizer(target: self, action: #selector(longPress(recognizer:)))
+        longPressGR.minimumPressDuration = 0.5
+        
+        addGestureRecognizer(longPressGR)
     }
     
 }

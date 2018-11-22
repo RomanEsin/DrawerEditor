@@ -19,6 +19,10 @@
 		14E6C88521A6AD3F00D26B7E /* ItemTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C88421A6AD3F00D26B7E /* ItemTableView.swift */; };
 		14E6C88821A6B35600D26B7E /* CGPoint Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C88721A6B35600D26B7E /* CGPoint Extension.swift */; };
 		14E6C88A21A6BECD00D26B7E /* TableViewDelegate:Datasource Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C88921A6BECD00D26B7E /* TableViewDelegate:Datasource Methods.swift */; };
+		14E6C88D21A76D9100D26B7E /* EditableViewPanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C88C21A76D9100D26B7E /* EditableViewPanGesture.swift */; };
+		14E6C89121A76E7A00D26B7E /* ItemCellLongPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C89021A76E7A00D26B7E /* ItemCellLongPress.swift */; };
+		14E6C89421A76F3800D26B7E /* ItemCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C89321A76F3800D26B7E /* ItemCellDelegate.swift */; };
+		14E6C89621A7703000D26B7E /* ItemCellDelegateMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C89521A7703000D26B7E /* ItemCellDelegateMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		14E6C88421A6AD3F00D26B7E /* ItemTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableView.swift; sourceTree = "<group>"; };
 		14E6C88721A6B35600D26B7E /* CGPoint Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint Extension.swift"; sourceTree = "<group>"; };
 		14E6C88921A6BECD00D26B7E /* TableViewDelegate:Datasource Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDelegate:Datasource Methods.swift"; sourceTree = "<group>"; };
+		14E6C88C21A76D9100D26B7E /* EditableViewPanGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableViewPanGesture.swift; sourceTree = "<group>"; };
+		14E6C89021A76E7A00D26B7E /* ItemCellLongPress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellLongPress.swift; sourceTree = "<group>"; };
+		14E6C89321A76F3800D26B7E /* ItemCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellDelegate.swift; sourceTree = "<group>"; };
+		14E6C89521A7703000D26B7E /* ItemCellDelegateMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellDelegateMethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 				148601F021A64C0600E5583E /* Main.storyboard */,
 				148601EE21A64C0600E5583E /* ViewController.swift */,
 				14E6C88921A6BECD00D26B7E /* TableViewDelegate:Datasource Methods.swift */,
+				14E6C89521A7703000D26B7E /* ItemCellDelegateMethods.swift */,
 			);
 			path = InitialViewController;
 			sourceTree = "<group>";
@@ -110,9 +119,9 @@
 		14E6C88121A6AB7200D26B7E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				14AECE0B21A67BCA00337ED4 /* ItemCell.swift */,
-				14E6C88221A6ABA800D26B7E /* EditableView.swift */,
 				14E6C88421A6AD3F00D26B7E /* ItemTableView.swift */,
+				14E6C89221A76E9200D26B7E /* ItemCell */,
+				14E6C88B21A76D7800D26B7E /* EditableView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,6 +132,25 @@
 				14E6C88721A6B35600D26B7E /* CGPoint Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		14E6C88B21A76D7800D26B7E /* EditableView */ = {
+			isa = PBXGroup;
+			children = (
+				14E6C88221A6ABA800D26B7E /* EditableView.swift */,
+				14E6C88C21A76D9100D26B7E /* EditableViewPanGesture.swift */,
+			);
+			path = EditableView;
+			sourceTree = "<group>";
+		};
+		14E6C89221A76E9200D26B7E /* ItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				14AECE0B21A67BCA00337ED4 /* ItemCell.swift */,
+				14E6C89021A76E7A00D26B7E /* ItemCellLongPress.swift */,
+				14E6C89321A76F3800D26B7E /* ItemCellDelegate.swift */,
+			);
+			path = ItemCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,12 +231,16 @@
 			files = (
 				14AECE0D21A67BCA00337ED4 /* ItemCell.swift in Sources */,
 				14E6C88521A6AD3F00D26B7E /* ItemTableView.swift in Sources */,
+				14E6C88D21A76D9100D26B7E /* EditableViewPanGesture.swift in Sources */,
 				148601EF21A64C0600E5583E /* ViewController.swift in Sources */,
+				14E6C89121A76E7A00D26B7E /* ItemCellLongPress.swift in Sources */,
 				14E6C88821A6B35600D26B7E /* CGPoint Extension.swift in Sources */,
 				148601ED21A64C0600E5583E /* AppDelegate.swift in Sources */,
+				14E6C89421A76F3800D26B7E /* ItemCellDelegate.swift in Sources */,
 				14E6C88021A680E100D26B7E /* ItemCellData.swift in Sources */,
 				14E6C88321A6ABA800D26B7E /* EditableView.swift in Sources */,
 				14E6C88A21A6BECD00D26B7E /* TableViewDelegate:Datasource Methods.swift in Sources */,
+				14E6C89621A7703000D26B7E /* ItemCellDelegateMethods.swift in Sources */,
 				1486020121A655CE00E5583E /* VideoPreviewData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +390,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JK457FFM94;
 				INFOPLIST_FILE = "TestFlight Test Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,6 +409,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JK457FFM94;
 				INFOPLIST_FILE = "TestFlight Test Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
