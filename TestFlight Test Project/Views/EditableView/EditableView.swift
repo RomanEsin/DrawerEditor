@@ -15,9 +15,7 @@ class EditableView: UIView {
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
         
-        print("Did move to superview")
         let panGR = UIPanGestureRecognizer(target: self, action: #selector(pan(recognizer:)))
-        
         addGestureRecognizer(panGR)
     }
 

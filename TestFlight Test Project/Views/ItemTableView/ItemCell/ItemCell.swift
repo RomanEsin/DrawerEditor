@@ -14,7 +14,9 @@ class ItemCell: UITableViewCell {
     @IBOutlet weak var objectNameLabel: UILabel!
     @IBOutlet weak var objectDescriptionLabel: UILabel!
     
+    var delegate: ItemCellDelegate?
     var cellData: ItemCellData!
+    var indexPath: IndexPath!
     
     var tableView: UITableView {
         return self.superview as! UITableView
@@ -34,8 +36,6 @@ class ItemCell: UITableViewCell {
         get { return objectDescriptionLabel.text! }
         set { objectDescriptionLabel.text = newValue }
     }
-    
-    var delegate: ItemCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -61,13 +61,13 @@ class ItemCell: UITableViewCell {
         addGestureRecognizer(longPressGR)
     }
     
-    func setupFromAnotherCell(_ itemCell: ItemCell) {
-        frame = itemCell.frame
-        
-        itemImageView = itemCell.imageView
-        objectNameLabel = itemCell.objectNameLabel
-        objectDescriptionLabel = itemCell.objectDescriptionLabel
-        
-        cellData = itemCell.cellData
-    }
+//    func setupFromAnotherCell(_ itemCell: ItemCell) {
+//        frame = itemCell.frame
+//
+//        itemImageView = itemCell.imageView
+//        objectNameLabel = itemCell.objectNameLabel
+//        objectDescriptionLabel = itemCell.objectDescriptionLabel
+//
+//        cellData = itemCell.cellData
+//    }
 }
