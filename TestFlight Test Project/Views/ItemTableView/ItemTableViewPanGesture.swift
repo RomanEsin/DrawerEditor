@@ -1,27 +1,16 @@
 //
-//  ItemTableView.swift
+//  ItemTableViewPanGesture.swift
 //  TestFlight Test Project
 //
-//  Created by Юрий Есин on 22.11.2018.
+//  Created by Юрий Есин on 23.11.2018.
 //  Copyright © 2018 MariaEsina. All rights reserved.
 //
 
 import UIKit
 
-class ItemTableView: UITableView {
-    
-    override func didMoveToSuperview() {
-        super.didMoveToSuperview()
-        
-        print("Item table view did move to superview")
-//        let panGR = UIPanGestureRecognizer(target: self, action: #selector(pan(recognizer:)))
-//        addGestureRecognizer(panGR)
-    }
-    
-//    var initialOffset: CGPoint = .zero
-//
+extension ItemTableView {
 //    @objc func pan(recognizer: UIPanGestureRecognizer) {
-//        let touchLocation = recognizer.location(in: self.superview)
+//        let touchLocation = recognizer.location(in: self.superview?.superview)
 //
 //        switch recognizer.state {
 //        case .began:
@@ -29,7 +18,9 @@ class ItemTableView: UITableView {
 //            return
 //
 //        case .changed:
-//            center = touchLocation - initialOffset
+//            print(superview!.center.y)
+//            superview!.center.y = touchLocation.y - initialOffset.y
+//            print(superview!.center.y)
 //            return
 //
 //        case .ended, .cancelled, .failed:
@@ -42,6 +33,6 @@ class ItemTableView: UITableView {
 //    }
 //
 //    func panEnded(recognizer: UIPanGestureRecognizer) {
-//         let touchLocation = recognizer.location(in: self.superview)
+//        let touchLocation = recognizer.location(in: self.superview)
 //    }
 }

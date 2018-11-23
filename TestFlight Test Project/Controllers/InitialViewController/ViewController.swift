@@ -10,8 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var drawerView: UIView!
     @IBOutlet var itemTableView: ItemTableView!
+    
     var editableViews = [EditableView]()
+    var editableCells = [ItemCell]()
     
     var tableViewCellData: [[ItemCellData]] = [[], []]
     var animations: [UITableView.RowAnimation] = [.automatic, .bottom, .left, .middle, .right, .fade]
@@ -42,27 +45,14 @@ class ViewController: UIViewController {
         itemTableView.separatorStyle = .singleLine
         itemTableView.delaysContentTouches = false
         
-        view.addSubview(itemTableView)
-        itemTableView.center.y += 400
+        view.addSubview(drawerView)
+        
+        drawerView.center.y += 300
         
     }
     
     func createEditableView(frame: CGRect, cornerRadius: CGFloat, fillColor: UIColor) {
         let editableView = EditableView(frame: frame)
-        editableView.layer.cornerRadius = cornerRadius
-        editableView.backgroundColor = fillColor
-        
-        view.addSubview(editableView)
-        editableViews.append(editableView)
-    }
-    
-    func createEditableViewAt(_ location: CGPoint, cornerRadius: CGFloat, fillColor: UIColor) {
-        let editableView = EditableView(frame: CGRect(origin: .zero, size: CGSize(width: 100, height: 100)))
-        editableView.center = location
-        #warning("Corner radius function")
-        #warning("Ex: return 1 / 4 width")
-//        cornerRadius: (CGFloat) -> CGFloat
-//        editableView.layer.cornerRadius = cornerRadius(editableView.frame.width)
         editableView.layer.cornerRadius = cornerRadius
         editableView.backgroundColor = fillColor
         

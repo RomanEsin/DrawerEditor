@@ -14,6 +14,7 @@ extension ItemCell {
         case .began:
             print("Began")
             delegate?.itemCell(self, longPressDidBegin: recognizer)
+            tableView.deselectRow(at: IndexPath(row: 0, section: 0), animated: true)
         case .changed:
             print("Changed")
             delegate?.itemCell(self, longPressDidChanged: recognizer)
