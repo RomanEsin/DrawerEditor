@@ -56,11 +56,12 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NCb-bv-Htt">
                             <rect key="frame" x="65" y="0.0" width="259" height="57"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Property Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHH-qx-fJK">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Item Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHH-qx-fJK">
                                     <rect key="frame" x="0.0" y="15" width="259" height="27.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
+                                    <size key="shadowOffset" width="0.0" height="0.0"/>
                                 </label>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,7 +84,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.6841555824739679" green="0.6841555824739679" blue="0.6841555824739679" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.58255342511356178" green="0.58255342511356178" blue="0.58255342511356178" alpha="0.2504066780821918" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zvi-jV-nLX" secondAttribute="trailing" constant="15" id="24z-TG-ylO"/>
                 <constraint firstItem="vwI-vx-fZW" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="GTh-eo-dPg"/>
@@ -101,7 +102,7 @@
                 <outlet property="objectDescriptionLabel" destination="rhN-nK-3tm" id="5Wy-63-akk"/>
                 <outlet property="objectNameLabel" destination="KHH-qx-fJK" id="cf4-Hn-EnY"/>
             </connections>
-            <point key="canvasLocation" x="188.80000000000001" y="-5.8470764617691158"/>
+            <point key="canvasLocation" x="182" y="-164"/>
         </view>
     </objects>
 </document>

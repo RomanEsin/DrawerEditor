@@ -15,8 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     
     #warning("Change the naming")
-    var editableViews = [EditableView]()
-    var editableCells = [ItemView]()
+    var editableViews = [ItemView]()
     
     var tableViewCellData: [[ItemCellData]] = [[]]
     var animations: [UITableView.RowAnimation] = [.automatic, .bottom, .left, .middle, .right, .fade]
@@ -44,6 +43,7 @@ class ViewController: UIViewController {
         itemTableView.isScrollEnabled = true
     }
     
+    // MARK: - Creating data for cells 
     func createCellData() {
         let item1Data = ItemCellData(imageURL: "compass", title: "Compass", description: "Shows your direction")
         let item2Data = ItemCellData(imageURL: "upload", title: "Upload", description: "Uploads files to wherewhere you like")

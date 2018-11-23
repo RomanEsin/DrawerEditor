@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: - ItemCellDelegate methods
 extension ViewController: ItemCellDelegate {
     func itemCell(_ itemCell: ItemCell, longPressDidBegin recognizer: UILongPressGestureRecognizer) {
         var feedback: UIImpactFeedbackGenerator? = UIImpactFeedbackGenerator(style: .medium)
@@ -18,6 +19,6 @@ extension ViewController: ItemCellDelegate {
     }
     
     func itemCell(_ itemCell: ItemCell, longPressDidChanged recognizer: UILongPressGestureRecognizer) {
-        editableCells.last!.center = CGPoint(x: recognizer.location(in: view).x - editableCells.last!.initialOffset.x, y: recognizer.location(in: view).y)
+        editableViews.last!.center = CGPoint(x: recognizer.location(in: view).x - editableViews.last!.initialOffset.x, y: recognizer.location(in: view).y)
     }
 }

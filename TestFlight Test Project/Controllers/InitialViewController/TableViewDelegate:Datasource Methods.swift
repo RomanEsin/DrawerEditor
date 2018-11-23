@@ -28,17 +28,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        createEditableView(frame: CGRect(origin: CGPoint(x: (view.frame.width / 2) - 50, y: 200), size: CGSize(width: 100, height: 100)), cornerRadius: 20, fillColor: .red)
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
-    //    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    //        return "Header \(section)"
-    //    }
-    
-    //    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-    //        let label = UILabel(frame: CGRect(origin: .zero, size: CGSize(width: 100, height: 20)))
-    //        label.text = "Hello"
-    //        return label
-    //    }
 }
