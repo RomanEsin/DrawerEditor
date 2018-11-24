@@ -19,8 +19,8 @@ extension ViewController {
         
         itemView.setupWithData(itemCellData)
         
-        itemView.frame = CGRect(origin: .zero, size: CGSize(width: 0, height: 0))
-        itemView.center = CGPoint(x: self.view.frame.width / 2, y: location.y)
+        itemView.frame = CGRect(origin: CGPoint(x: self.view.frame.width / 2, y: location.y), size: CGSize(width: 0, height: 0))
+//        itemView.center = CGPoint(x: self.view.frame.width / 2, y: location.y)
         itemView.alpha = 0
         itemView.initialOffset = CGPoint(x: location.x - (view.frame.width / 2), y: 0)
         

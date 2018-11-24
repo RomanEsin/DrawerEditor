@@ -12,4 +12,6 @@ protocol ItemCellDelegate {
     func itemCell(_ itemCell: ItemCell, longPressDidBegin recognizer: UILongPressGestureRecognizer)
     
     func itemCell(_ itemCell: ItemCell, longPressDidChanged recognizer: UILongPressGestureRecognizer)
+    
+    func itemCell(_ itemCell: ItemCell, longPressDidEnd recognizer: UILongPressGestureRecognizer)
 }

@@ -18,6 +18,7 @@ class ItemTableView: UITableView {
     
     var initialOffset: CGPoint = .zero
     var state = State.expanded
+    var cellInteractionEnabled = true
     
     override func didMoveToSuperview() {
         super.didMoveToSuperview()

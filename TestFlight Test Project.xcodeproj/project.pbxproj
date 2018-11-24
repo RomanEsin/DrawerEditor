@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1403279721A79BD20038378D /* ItemTableViewPanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403279621A79BD20038378D /* ItemTableViewPanGesture.swift */; };
-		1403279921A7B0950038378D /* ViewControllerCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403279821A7B0950038378D /* ViewControllerCreateView.swift */; };
+		1403279921A7B0950038378D /* VCCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403279821A7B0950038378D /* VCCreateView.swift */; };
 		140327A521A7FEFA0038378D /* ItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140327A421A7FEFA0038378D /* ItemView.xib */; };
 		140327A721A7FF080038378D /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140327A621A7FF080038378D /* ItemView.swift */; };
 		140327AA21A813FA0038378D /* ItemViewPanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140327A921A813FA0038378D /* ItemViewPanGesture.swift */; };
@@ -24,17 +24,20 @@
 		14E6C88321A6ABA800D26B7E /* EditableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C88221A6ABA800D26B7E /* EditableView.swift */; };
 		14E6C88521A6AD3F00D26B7E /* ItemTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C88421A6AD3F00D26B7E /* ItemTableView.swift */; };
 		14E6C88821A6B35600D26B7E /* CGPoint Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C88721A6B35600D26B7E /* CGPoint Extension.swift */; };
-		14E6C88A21A6BECD00D26B7E /* TableViewDelegate:Datasource Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C88921A6BECD00D26B7E /* TableViewDelegate:Datasource Methods.swift */; };
+		14E6C88A21A6BECD00D26B7E /* DrawerVCTableViewMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C88921A6BECD00D26B7E /* DrawerVCTableViewMethods.swift */; };
 		14E6C88D21A76D9100D26B7E /* EditableViewPanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C88C21A76D9100D26B7E /* EditableViewPanGesture.swift */; };
 		14E6C89121A76E7A00D26B7E /* ItemCellLongPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C89021A76E7A00D26B7E /* ItemCellLongPress.swift */; };
 		14E6C89421A76F3800D26B7E /* ItemCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C89321A76F3800D26B7E /* ItemCellDelegate.swift */; };
-		14E6C89621A7703000D26B7E /* ItemCellDelegateMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C89521A7703000D26B7E /* ItemCellDelegateMethods.swift */; };
 		14E6C89821A776C900D26B7E /* UISpringTimingParameters Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6C89721A776C900D26B7E /* UISpringTimingParameters Extension.swift */; };
+		309F338B21A8CC6700E04DBF /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F338A21A8CC6700E04DBF /* DrawerViewController.swift */; };
+		309F338D21A8CDBA00E04DBF /* DrawerVCItemCellDelegateMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F338C21A8CDBA00E04DBF /* DrawerVCItemCellDelegateMethods.swift */; };
+		309F339121A8D27B00E04DBF /* DrawerVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F339021A8D27B00E04DBF /* DrawerVCDelegate.swift */; };
+		309F339321A8D45400E04DBF /* VCDrawerVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F339221A8D45400E04DBF /* VCDrawerVCDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1403279621A79BD20038378D /* ItemTableViewPanGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewPanGesture.swift; sourceTree = "<group>"; };
-		1403279821A7B0950038378D /* ViewControllerCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCreateView.swift; sourceTree = "<group>"; };
+		1403279821A7B0950038378D /* VCCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCCreateView.swift; sourceTree = "<group>"; };
 		140327A421A7FEFA0038378D /* ItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemView.xib; sourceTree = "<group>"; };
 		140327A621A7FF080038378D /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		140327A921A813FA0038378D /* ItemViewPanGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewPanGesture.swift; sourceTree = "<group>"; };
@@ -52,12 +55,15 @@
 		14E6C88221A6ABA800D26B7E /* EditableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableView.swift; sourceTree = "<group>"; };
 		14E6C88421A6AD3F00D26B7E /* ItemTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableView.swift; sourceTree = "<group>"; };
 		14E6C88721A6B35600D26B7E /* CGPoint Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint Extension.swift"; sourceTree = "<group>"; };
-		14E6C88921A6BECD00D26B7E /* TableViewDelegate:Datasource Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDelegate:Datasource Methods.swift"; sourceTree = "<group>"; };
+		14E6C88921A6BECD00D26B7E /* DrawerVCTableViewMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerVCTableViewMethods.swift; sourceTree = "<group>"; };
 		14E6C88C21A76D9100D26B7E /* EditableViewPanGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableViewPanGesture.swift; sourceTree = "<group>"; };
 		14E6C89021A76E7A00D26B7E /* ItemCellLongPress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellLongPress.swift; sourceTree = "<group>"; };
 		14E6C89321A76F3800D26B7E /* ItemCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellDelegate.swift; sourceTree = "<group>"; };
-		14E6C89521A7703000D26B7E /* ItemCellDelegateMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellDelegateMethods.swift; sourceTree = "<group>"; };
 		14E6C89721A776C900D26B7E /* UISpringTimingParameters Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISpringTimingParameters Extension.swift"; sourceTree = "<group>"; };
+		309F338A21A8CC6700E04DBF /* DrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
+		309F338C21A8CDBA00E04DBF /* DrawerVCItemCellDelegateMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerVCItemCellDelegateMethods.swift; sourceTree = "<group>"; };
+		309F339021A8D27B00E04DBF /* DrawerVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerVCDelegate.swift; sourceTree = "<group>"; };
+		309F339221A8D45400E04DBF /* VCDrawerVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDrawerVCDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				148601EC21A64C0600E5583E /* AppDelegate.swift */,
+				309F339421A9406100E04DBF /* Protocols */,
 				14E6C88621A6B34700D26B7E /* Extensions */,
 				14E6C88121A6AB7200D26B7E /* Views */,
 				148601FE21A6547000E5583E /* Controllers */,
@@ -126,7 +133,9 @@
 		148601FE21A6547000E5583E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				309F339521A940A100E04DBF /* Storyboards */,
 				14AECE0A21A6745F00337ED4 /* InitialViewController */,
+				309F338921A8CC3900E04DBF /* DrawerViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -143,11 +152,9 @@
 		14AECE0A21A6745F00337ED4 /* InitialViewController */ = {
 			isa = PBXGroup;
 			children = (
-				148601F021A64C0600E5583E /* Main.storyboard */,
 				148601EE21A64C0600E5583E /* ViewController.swift */,
-				1403279821A7B0950038378D /* ViewControllerCreateView.swift */,
-				14E6C88921A6BECD00D26B7E /* TableViewDelegate:Datasource Methods.swift */,
-				14E6C89521A7703000D26B7E /* ItemCellDelegateMethods.swift */,
+				1403279821A7B0950038378D /* VCCreateView.swift */,
+				309F339221A8D45400E04DBF /* VCDrawerVCDelegate.swift */,
 			);
 			path = InitialViewController;
 			sourceTree = "<group>";
@@ -185,9 +192,35 @@
 			children = (
 				14AECE0B21A67BCA00337ED4 /* ItemCell.swift */,
 				14E6C89021A76E7A00D26B7E /* ItemCellLongPress.swift */,
-				14E6C89321A76F3800D26B7E /* ItemCellDelegate.swift */,
 			);
 			path = ItemCell;
+			sourceTree = "<group>";
+		};
+		309F338921A8CC3900E04DBF /* DrawerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				309F338A21A8CC6700E04DBF /* DrawerViewController.swift */,
+				14E6C88921A6BECD00D26B7E /* DrawerVCTableViewMethods.swift */,
+				309F338C21A8CDBA00E04DBF /* DrawerVCItemCellDelegateMethods.swift */,
+			);
+			path = DrawerViewController;
+			sourceTree = "<group>";
+		};
+		309F339421A9406100E04DBF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				309F339021A8D27B00E04DBF /* DrawerVCDelegate.swift */,
+				14E6C89321A76F3800D26B7E /* ItemCellDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		309F339521A940A100E04DBF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				148601F021A64C0600E5583E /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,22 +301,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				14AECE0D21A67BCA00337ED4 /* ItemCell.swift in Sources */,
+				309F338D21A8CDBA00E04DBF /* DrawerVCItemCellDelegateMethods.swift in Sources */,
+				309F339121A8D27B00E04DBF /* DrawerVCDelegate.swift in Sources */,
 				14E6C88521A6AD3F00D26B7E /* ItemTableView.swift in Sources */,
+				309F339321A8D45400E04DBF /* VCDrawerVCDelegate.swift in Sources */,
 				14E6C88D21A76D9100D26B7E /* EditableViewPanGesture.swift in Sources */,
 				1403279721A79BD20038378D /* ItemTableViewPanGesture.swift in Sources */,
 				148601EF21A64C0600E5583E /* ViewController.swift in Sources */,
 				14E6C89121A76E7A00D26B7E /* ItemCellLongPress.swift in Sources */,
 				14E6C88821A6B35600D26B7E /* CGPoint Extension.swift in Sources */,
-				1403279921A7B0950038378D /* ViewControllerCreateView.swift in Sources */,
+				1403279921A7B0950038378D /* VCCreateView.swift in Sources */,
 				148601ED21A64C0600E5583E /* AppDelegate.swift in Sources */,
 				140327AC21A815CE0038378D /* UIView Extensions.swift in Sources */,
 				14E6C89421A76F3800D26B7E /* ItemCellDelegate.swift in Sources */,
 				14E6C88021A680E100D26B7E /* ItemCellData.swift in Sources */,
 				14E6C88321A6ABA800D26B7E /* EditableView.swift in Sources */,
-				14E6C88A21A6BECD00D26B7E /* TableViewDelegate:Datasource Methods.swift in Sources */,
+				14E6C88A21A6BECD00D26B7E /* DrawerVCTableViewMethods.swift in Sources */,
 				140327A721A7FF080038378D /* ItemView.swift in Sources */,
-				14E6C89621A7703000D26B7E /* ItemCellDelegateMethods.swift in Sources */,
 				1486020121A655CE00E5583E /* VideoPreviewData.swift in Sources */,
+				309F338B21A8CC6700E04DBF /* DrawerViewController.swift in Sources */,
 				14E6C89821A776C900D26B7E /* UISpringTimingParameters Extension.swift in Sources */,
 				140327AA21A813FA0038378D /* ItemViewPanGesture.swift in Sources */,
 			);

@@ -60,14 +60,4 @@ class ItemCell: UITableViewCell {
         
         addGestureRecognizer(longPressGR)
     }
-    
-//    func setupFromAnotherCell(_ itemCell: ItemCell) {
-//        frame = itemCell.frame
-//
-//        itemImageView = itemCell.imageView
-//        objectNameLabel = itemCell.objectNameLabel
-//        objectDescriptionLabel = itemCell.objectDescriptionLabel
-//
-//        cellData = itemCell.cellData
-//    }
 }

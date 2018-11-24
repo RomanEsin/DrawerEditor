@@ -28,8 +28,8 @@ extension EditableView {
     }
     
     func panEnded(_ recognizer: UIPanGestureRecognizer) {
-        #warning("Incomplete implementation")
-        let touchLocation = recognizer.location(in: self.superview)
-        #warning("Incomplete implementation")
+//        #warning("Incomplete implementation")
+//        let touchLocation = recognizer.location(in: self.superview)
+//        #warning("Incomplete implementation")
     }
 }

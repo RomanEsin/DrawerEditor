@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: - TableViewDataSource and Delegate Methods
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension DrawerViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return tableViewCellData.count
     }
