@@ -22,6 +22,8 @@ extension ItemView {
             
         case .ended, .failed:
             panEnded(recognizer)
+            return
+            
         default:
             return
         }

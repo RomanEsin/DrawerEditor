@@ -17,16 +17,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vwI-vx-fZW">
-                    <rect key="frame" x="0.0" y="0.0" width="354" height="79"/>
+                    <rect key="frame" x="-73" y="-110.5" width="500" height="300"/>
                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Gmd-8c-vSW">
-                        <rect key="frame" x="0.0" y="0.0" width="354" height="79"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ix0-bY-YkB">
-                                <rect key="frame" x="0.0" y="0.0" width="354" height="79"/>
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="300"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="q9V-o8-fH8">
-                                    <rect key="frame" x="0.0" y="0.0" width="354" height="79"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="500" height="300"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <vibrancyEffect>
@@ -35,6 +35,10 @@
                             </visualEffectView>
                         </subviews>
                     </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="500" id="jQr-gC-NLx"/>
+                        <constraint firstAttribute="height" constant="300" id="tlS-0H-xkG"/>
+                    </constraints>
                     <blurEffect style="light"/>
                 </visualEffectView>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvi-jV-nLX">
@@ -84,16 +88,16 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.5034401197507592" green="0.5034401197507592" blue="0.5034401197507592" alpha="0.2504066780821918" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.39881666927937492" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zvi-jV-nLX" secondAttribute="trailing" constant="15" id="24z-TG-ylO"/>
-                <constraint firstItem="vwI-vx-fZW" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="GTh-eo-dPg"/>
+                <constraint firstItem="zvi-jV-nLX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7Wi-R0-teN"/>
+                <constraint firstItem="zvi-jV-nLX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Afj-N9-KaG"/>
                 <constraint firstItem="zvi-jV-nLX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="11" id="Ljm-x8-P9j"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="zvi-jV-nLX" secondAttribute="bottom" constant="11" id="Sd9-WI-Adf"/>
                 <constraint firstItem="zvi-jV-nLX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="YLm-D3-UZy"/>
-                <constraint firstItem="vwI-vx-fZW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dQ8-5z-lgR"/>
-                <constraint firstItem="vwI-vx-fZW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="hFt-3T-y2e"/>
-                <constraint firstItem="vwI-vx-fZW" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="pmB-N7-NGX"/>
+                <constraint firstItem="vwI-vx-fZW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lDq-E3-EuA"/>
+                <constraint firstItem="vwI-vx-fZW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="odx-Wh-z5O"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

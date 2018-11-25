@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1403279721A79BD20038378D /* ItemTableViewPanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403279621A79BD20038378D /* ItemTableViewPanGesture.swift */; };
 		1403279921A7B0950038378D /* VCCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403279821A7B0950038378D /* VCCreateView.swift */; };
 		140327A521A7FEFA0038378D /* ItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140327A421A7FEFA0038378D /* ItemView.xib */; };
 		140327A721A7FF080038378D /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140327A621A7FF080038378D /* ItemView.swift */; };
@@ -33,10 +32,15 @@
 		309F338D21A8CDBA00E04DBF /* DrawerVCItemCellDelegateMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F338C21A8CDBA00E04DBF /* DrawerVCItemCellDelegateMethods.swift */; };
 		309F339121A8D27B00E04DBF /* DrawerVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F339021A8D27B00E04DBF /* DrawerVCDelegate.swift */; };
 		309F339321A8D45400E04DBF /* VCDrawerVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F339221A8D45400E04DBF /* VCDrawerVCDelegate.swift */; };
+		309F339721A9621D00E04DBF /* VCSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F339621A9621D00E04DBF /* VCSearchBarDelegate.swift */; };
+		309F339921A9628700E04DBF /* DrawerVCSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F339821A9628700E04DBF /* DrawerVCSearchBarDelegate.swift */; };
+		309F339B21A964C900E04DBF /* VCDrawerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F339A21A964C900E04DBF /* VCDrawerAnimation.swift */; };
+		309F339D21AA12B600E04DBF /* VCPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F339C21AA12B600E04DBF /* VCPanGestureRecognizer.swift */; };
+		309F33A021AA192700E04DBF /* VCPanEnded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F339F21AA192700E04DBF /* VCPanEnded.swift */; };
+		309F33A221AA883600E04DBF /* VCRemoveItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F33A121AA883600E04DBF /* VCRemoveItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1403279621A79BD20038378D /* ItemTableViewPanGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewPanGesture.swift; sourceTree = "<group>"; };
 		1403279821A7B0950038378D /* VCCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCCreateView.swift; sourceTree = "<group>"; };
 		140327A421A7FEFA0038378D /* ItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemView.xib; sourceTree = "<group>"; };
 		140327A621A7FF080038378D /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
@@ -64,6 +68,12 @@
 		309F338C21A8CDBA00E04DBF /* DrawerVCItemCellDelegateMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerVCItemCellDelegateMethods.swift; sourceTree = "<group>"; };
 		309F339021A8D27B00E04DBF /* DrawerVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerVCDelegate.swift; sourceTree = "<group>"; };
 		309F339221A8D45400E04DBF /* VCDrawerVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDrawerVCDelegate.swift; sourceTree = "<group>"; };
+		309F339621A9621D00E04DBF /* VCSearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSearchBarDelegate.swift; sourceTree = "<group>"; };
+		309F339821A9628700E04DBF /* DrawerVCSearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerVCSearchBarDelegate.swift; sourceTree = "<group>"; };
+		309F339A21A964C900E04DBF /* VCDrawerAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDrawerAnimation.swift; sourceTree = "<group>"; };
+		309F339C21AA12B600E04DBF /* VCPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		309F339F21AA192700E04DBF /* VCPanEnded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCPanEnded.swift; sourceTree = "<group>"; };
+		309F33A121AA883600E04DBF /* VCRemoveItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCRemoveItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				14E6C88421A6AD3F00D26B7E /* ItemTableView.swift */,
-				1403279621A79BD20038378D /* ItemTableViewPanGesture.swift */,
 				140327A821A801360038378D /* ItemView */,
 				14E6C89221A76E9200D26B7E /* ItemCell */,
 			);
@@ -153,8 +162,12 @@
 			isa = PBXGroup;
 			children = (
 				148601EE21A64C0600E5583E /* ViewController.swift */,
+				309F33A121AA883600E04DBF /* VCRemoveItems.swift */,
+				309F339E21AA191300E04DBF /* Pan Recognizer */,
 				1403279821A7B0950038378D /* VCCreateView.swift */,
 				309F339221A8D45400E04DBF /* VCDrawerVCDelegate.swift */,
+				309F339621A9621D00E04DBF /* VCSearchBarDelegate.swift */,
+				309F339A21A964C900E04DBF /* VCDrawerAnimation.swift */,
 			);
 			path = InitialViewController;
 			sourceTree = "<group>";
@@ -202,6 +215,7 @@
 				309F338A21A8CC6700E04DBF /* DrawerViewController.swift */,
 				14E6C88921A6BECD00D26B7E /* DrawerVCTableViewMethods.swift */,
 				309F338C21A8CDBA00E04DBF /* DrawerVCItemCellDelegateMethods.swift */,
+				309F339821A9628700E04DBF /* DrawerVCSearchBarDelegate.swift */,
 			);
 			path = DrawerViewController;
 			sourceTree = "<group>";
@@ -221,6 +235,15 @@
 				148601F021A64C0600E5583E /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		309F339E21AA191300E04DBF /* Pan Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				309F339C21AA12B600E04DBF /* VCPanGestureRecognizer.swift */,
+				309F339F21AA192700E04DBF /* VCPanEnded.swift */,
+			);
+			path = "Pan Recognizer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,11 +326,14 @@
 				14AECE0D21A67BCA00337ED4 /* ItemCell.swift in Sources */,
 				309F338D21A8CDBA00E04DBF /* DrawerVCItemCellDelegateMethods.swift in Sources */,
 				309F339121A8D27B00E04DBF /* DrawerVCDelegate.swift in Sources */,
+				309F339B21A964C900E04DBF /* VCDrawerAnimation.swift in Sources */,
 				14E6C88521A6AD3F00D26B7E /* ItemTableView.swift in Sources */,
 				309F339321A8D45400E04DBF /* VCDrawerVCDelegate.swift in Sources */,
 				14E6C88D21A76D9100D26B7E /* EditableViewPanGesture.swift in Sources */,
-				1403279721A79BD20038378D /* ItemTableViewPanGesture.swift in Sources */,
+				309F33A221AA883600E04DBF /* VCRemoveItems.swift in Sources */,
+				309F339D21AA12B600E04DBF /* VCPanGestureRecognizer.swift in Sources */,
 				148601EF21A64C0600E5583E /* ViewController.swift in Sources */,
+				309F33A021AA192700E04DBF /* VCPanEnded.swift in Sources */,
 				14E6C89121A76E7A00D26B7E /* ItemCellLongPress.swift in Sources */,
 				14E6C88821A6B35600D26B7E /* CGPoint Extension.swift in Sources */,
 				1403279921A7B0950038378D /* VCCreateView.swift in Sources */,
@@ -319,8 +345,10 @@
 				14E6C88A21A6BECD00D26B7E /* DrawerVCTableViewMethods.swift in Sources */,
 				140327A721A7FF080038378D /* ItemView.swift in Sources */,
 				1486020121A655CE00E5583E /* VideoPreviewData.swift in Sources */,
+				309F339721A9621D00E04DBF /* VCSearchBarDelegate.swift in Sources */,
 				309F338B21A8CC6700E04DBF /* DrawerViewController.swift in Sources */,
 				14E6C89821A776C900D26B7E /* UISpringTimingParameters Extension.swift in Sources */,
+				309F339921A9628700E04DBF /* DrawerVCSearchBarDelegate.swift in Sources */,
 				140327AA21A813FA0038378D /* ItemViewPanGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

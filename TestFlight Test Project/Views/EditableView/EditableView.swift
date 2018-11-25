@@ -18,6 +18,5 @@ class EditableView: UIView {
         let panGR = UIPanGestureRecognizer(target: self, action: #selector(pan(recognizer:)))
         addGestureRecognizer(panGR)
     }
-
 }
 

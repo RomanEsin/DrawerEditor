@@ -13,7 +13,7 @@ extension ViewController: DrawerViewControllerDelegate {
     
     func drawerViewController(_ drawerViewController: DrawerViewController, longPressDidBegin recognizer: UILongPressGestureRecognizer, onItemCell itemCell: ItemCell) {
         
-        var feedback: UIImpactFeedbackGenerator? = UIImpactFeedbackGenerator(style: .medium)
+        var feedback: UIImpactFeedbackGenerator? = UIImpactFeedbackGenerator(style: .heavy)
         feedback!.prepare()
         createMovableCellAt(recognizer.location(in: view), from: itemCell.cellData)
         feedback!.impactOccurred()

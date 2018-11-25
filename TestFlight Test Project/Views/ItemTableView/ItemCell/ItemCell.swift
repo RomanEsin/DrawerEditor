@@ -56,7 +56,7 @@ class ItemCell: UITableViewCell {
         objectDescriptionLabel.text = data.description
         
         let longPressGR = UILongPressGestureRecognizer(target: self, action: #selector(longPress(recognizer:)))
-        longPressGR.minimumPressDuration = 0.3
+        longPressGR.minimumPressDuration = 0.2
         
         addGestureRecognizer(longPressGR)
     }

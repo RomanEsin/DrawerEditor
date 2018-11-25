@@ -12,19 +12,23 @@ class DrawerViewController: UIViewController {
 
     @IBOutlet weak var itemTableView: ItemTableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var dragView: UIView!
     
     var delegate: DrawerViewControllerDelegate?
+    var searchBarDelegate: UISearchBarDelegate?
     
     var editableViews = [ItemView]()
     var tableViewCellData: [[ItemCellData]] = [[]]
+    var fullData: [[ItemCellData]] = [[]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        searchBar.delegate = self
         setupItemTableView()
         createCellData()
+        dragView.layer.cornerRadius = dragView.frame.height / 2
     }
     
     func setupItemTableView() {
@@ -44,6 +48,8 @@ class DrawerViewController: UIViewController {
         let item4Data = ItemCellData(imageURL: "combo_chart", title: "Charts", description: "Create charts")
         let item5Data = ItemCellData(imageURL: "coins", title: "Coins", description: "Gives some money for ya")
         let item6Data = ItemCellData(imageURL: "twitter", title: "Twitter", description: "Post some news!")
+        let item7Data = ItemCellData(imageURL: "settings", title: "Settings", description: "Customize your workflow")
+        let item8Data = ItemCellData(imageURL: "plus", title: "Plus", description: "Add something")
         
         tableViewCellData[0].append(item1Data)
         tableViewCellData[0].append(item2Data)
@@ -51,5 +57,18 @@ class DrawerViewController: UIViewController {
         tableViewCellData[0].append(item4Data)
         tableViewCellData[0].append(item5Data)
         tableViewCellData[0].append(item6Data)
+        tableViewCellData[0].append(item7Data)
+        tableViewCellData[0].append(item8Data)
+        
+        tableViewCellData[0].append(item1Data)
+        tableViewCellData[0].append(item2Data)
+        tableViewCellData[0].append(item3Data)
+        tableViewCellData[0].append(item4Data)
+        tableViewCellData[0].append(item5Data)
+        tableViewCellData[0].append(item6Data)
+        tableViewCellData[0].append(item7Data)
+        tableViewCellData[0].append(item8Data)
+        
+        fullData = tableViewCellData
     }
 }
