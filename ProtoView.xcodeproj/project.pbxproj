@@ -123,7 +123,7 @@
 		148601E021A64C0600E5583E = {
 			isa = PBXGroup;
 			children = (
-				148601EB21A64C0600E5583E /* TestFlight Test Project */,
+				148601EB21A64C0600E5583E /* ProtoView */,
 				148601EA21A64C0600E5583E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,7 +136,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		148601EB21A64C0600E5583E /* TestFlight Test Project */ = {
+		148601EB21A64C0600E5583E /* ProtoView */ = {
 			isa = PBXGroup;
 			children = (
 				309F33AA21AD103600E04DBF /* README.md */,
@@ -150,7 +150,7 @@
 				148601F521A64C0800E5583E /* LaunchScreen.storyboard */,
 				148601F821A64C0800E5583E /* Info.plist */,
 			);
-			path = "TestFlight Test Project";
+			path = ProtoView;
 			sourceTree = "<group>";
 		};
 		148601FE21A6547000E5583E /* Controllers */ = {
