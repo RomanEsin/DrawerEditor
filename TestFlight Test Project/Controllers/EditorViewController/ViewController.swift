@@ -16,6 +16,18 @@ class ViewController: UIViewController {
         case full = 0
     }
     
+    enum SettingsState {
+        case opened
+        case closed
+        
+        mutating func toggle() {
+            self == .closed ?
+                (self = .opened)
+                :
+                (self = .closed)
+        }
+    }
+    
     enum RubberbandState {
         case lower
         case upper
@@ -29,11 +41,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var alphaView: UIView!
     
+    @IBOutlet weak var settingsView: UIView!
+    @IBOutlet weak var settingsTopConstraint: NSLayoutConstraint!
+    
     var drawerState = DrawerState.compressed
+    var settingsState = SettingsState.closed
     var editableViews = [ItemView]()
     
-    /// Drawer view.
+    /// Drawer ViewController.
     weak var drawerVC: DrawerViewController!
+    
+    weak var settingsVC: SettingsViewController!
     
     // Idk whats that.
     var animations: [UITableView.RowAnimation] = [.automatic, .bottom, .left, .middle, .right, .fade]
@@ -49,34 +67,48 @@ class ViewController: UIViewController {
     var rubberbandStartPosition = CGFloat(0)
     var rubberbandState = RubberbandState.none
     
+    var shadowOpacity: Float {
+        get {
+            return drawerView.layer.shadowOpacity
+        }
+        set {
+            drawerView.layer.shadowOpacity = newValue
+            editableViews.forEach { (item) in
+                item.layer.shadowOpacity = newValue
+            }
+        }
+    }
+    
+    var shadowRadius: CGFloat {
+        get {
+            return drawerView.layer.shadowRadius
+        }
+        set {
+            drawerView.layer.shadowRadius = newValue
+            editableViews.forEach { (item) in
+                item.layer.shadowRadius = newValue
+            }
+        }
+    }
+    
     // MARK: - ViewController ViewDidLoad.
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupDrawer()
+        setupSettings()
         setupGestureRecognizers()
-        
-    }
-    
-    func setupDrawer() {
-        drawerView.layer.cornerRadius = 13
-        drawerView.clipsToBounds = true
-        
-        drawerTopConstraint.constant = 550
-        if let drawerVC = children.first as? DrawerViewController {
-            self.drawerVC = drawerVC
-            self.drawerVC.delegate = self
-            self.drawerVC.searchBarDelegate = self
-            self.drawerVC.itemTableView.isScrollEnabled = false
-        }
-    }
-    
-    func setupGestureRecognizers() {
-        let panGR = UIPanGestureRecognizer(target: self, action: #selector(pan(recognizer:)))
-        drawerView.addGestureRecognizer(panGR)
     }
     
     @IBAction func removeViews(_ sender: UIBarButtonItem) {
         removeItems()
+    }
+    
+    @IBAction func done(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func settings(_ sender: UIBarButtonItem) {
+        openSettings()
     }
 }

@@ -2,7 +2,7 @@
 //  ItemCellDelegate.swift
 //  TestFlight Test Project
 //
-//  Created by Юрий Есин on 23.11.2018.
+//  Created by Roman Esin on 23.11.2018.
 //  Copyright © 2018 MariaEsina. All rights reserved.
 //
 

@@ -26,9 +26,13 @@ class DrawerViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         searchBar.delegate = self
+        dragView.layer.cornerRadius = dragView.frame.height / 2
+        
+        view.layer.cornerRadius = 13
+        view.clipsToBounds = true
+        
         setupItemTableView()
         createCellData()
-        dragView.layer.cornerRadius = dragView.frame.height / 2
     }
     
     func setupItemTableView() {

@@ -2,7 +2,7 @@
 //  ViewControllerCreateView.swift
 //  TestFlight Test Project
 //
-//  Created by Юрий Есин on 23.11.2018.
+//  Created by Roman Esin on 23.11.2018.
 //  Copyright © 2018 MariaEsina. All rights reserved.
 //
 
@@ -22,11 +22,16 @@ extension ViewController {
         let itemView = nib.instantiate(withOwner: self, options: nil)[0] as! ItemView
         
         let fullSize = itemView.frame.size
-        let initFrame = CGRect(origin: CGPoint(x: view.frame.width / 2, y: location.y), size: CGSize(width: 0, height: 0))
+//        let initFrame = CGRect(origin: CGPoint(x: (view.frame.width / 2) - fullSize.width / 2, y: location.y  - fullSize.height / 2), size: CGSize(width: 0, height: 0))
+        let center = CGPoint(x: view.frame.width / 2, y: location.y)
         
         itemView.setupWithData(itemCellData)
         
-        itemView.frame = initFrame
+        itemView.frame.size = .zero
+        itemView.center = center
+        
+        itemView.subviews[0].clipsToBounds = true
+        itemView.subviews[0].layer.cornerRadius = 0
         
         itemView.alpha = 0
         itemView.initialOffset = CGPoint(x: location.x - (view.frame.width / 2), y: 0)
@@ -37,10 +42,14 @@ extension ViewController {
         let animator = UIViewPropertyAnimator(duration: 0, timingParameters: springTiming)
         animator.addAnimations {
             itemView.frame.size = fullSize
-            itemView.center = initFrame.origin
+            itemView.center = center
             
             itemView.alpha = 1
             itemView.layer.cornerRadius = cornerRadius
+            
+            itemView.subviews[0].layer.cornerRadius = cornerRadius
+            itemView.dropShadow(shadowRadius: self.shadowRadius, opacity: self.shadowOpacity)
+            itemView.layoutIfNeeded()
         }
         
         view.addSubview(itemView)

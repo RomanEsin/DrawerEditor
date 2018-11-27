@@ -2,7 +2,7 @@
 //  ItemCellTableViewCell.swift
 //  TestFlight Test Project
 //
-//  Created by Юрий Есин on 22.11.2018.
+//  Created by Roman Esin on 22.11.2018.
 //  Copyright © 2018 MariaEsina. All rights reserved.
 //
 
@@ -56,7 +56,7 @@ class ItemCell: UITableViewCell {
         objectDescriptionLabel.text = data.description
         
         let longPressGR = UILongPressGestureRecognizer(target: self, action: #selector(longPress(recognizer:)))
-        longPressGR.minimumPressDuration = 0.2
+        longPressGR.minimumPressDuration = 0.23
         
         addGestureRecognizer(longPressGR)
     }
