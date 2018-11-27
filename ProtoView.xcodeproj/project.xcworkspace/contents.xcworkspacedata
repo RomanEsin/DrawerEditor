@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TestFlight Test Project.xcodeproj">
+      location = "self:/Users/roman/Desktop/GitHub/TestFlight-Test-Project/ProtoView.xcodeproj">
    </FileRef>
 </Workspace>

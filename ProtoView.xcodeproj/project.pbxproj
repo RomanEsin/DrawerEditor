@@ -52,7 +52,7 @@
 		140327A621A7FF080038378D /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		140327A921A813FA0038378D /* ItemViewPanGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewPanGesture.swift; sourceTree = "<group>"; };
 		140327AB21A815CE0038378D /* UIView Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Extensions.swift"; sourceTree = "<group>"; };
-		148601E921A64C0600E5583E /* TestFlight Test Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestFlight Test Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		148601E921A64C0600E5583E /* ProtoView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtoView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		148601EC21A64C0600E5583E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		148601EE21A64C0600E5583E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		148601F121A64C0600E5583E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		148601EA21A64C0600E5583E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				148601E921A64C0600E5583E /* TestFlight Test Project.app */,
+				148601E921A64C0600E5583E /* ProtoView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -285,9 +285,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		148601E821A64C0600E5583E /* TestFlight Test Project */ = {
+		148601E821A64C0600E5583E /* ProtoView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 148601FB21A64C0800E5583E /* Build configuration list for PBXNativeTarget "TestFlight Test Project" */;
+			buildConfigurationList = 148601FB21A64C0800E5583E /* Build configuration list for PBXNativeTarget "ProtoView" */;
 			buildPhases = (
 				148601E521A64C0600E5583E /* Sources */,
 				148601E621A64C0600E5583E /* Frameworks */,
@@ -297,9 +297,9 @@
 			);
 			dependencies = (
 			);
-			name = "TestFlight Test Project";
+			name = ProtoView;
 			productName = "TestFlight Test Project";
-			productReference = 148601E921A64C0600E5583E /* TestFlight Test Project.app */;
+			productReference = 148601E921A64C0600E5583E /* ProtoView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -322,7 +322,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 148601E421A64C0600E5583E /* Build configuration list for PBXProject "TestFlight Test Project" */;
+			buildConfigurationList = 148601E421A64C0600E5583E /* Build configuration list for PBXProject "ProtoView" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -335,7 +335,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				148601E821A64C0600E5583E /* TestFlight Test Project */,
+				148601E821A64C0600E5583E /* ProtoView */,
 			);
 		};
 /* End PBXProject section */
@@ -574,7 +574,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		148601E421A64C0600E5583E /* Build configuration list for PBXProject "TestFlight Test Project" */ = {
+		148601E421A64C0600E5583E /* Build configuration list for PBXProject "ProtoView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				148601F921A64C0800E5583E /* Debug */,
@@ -583,7 +583,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		148601FB21A64C0800E5583E /* Build configuration list for PBXNativeTarget "TestFlight Test Project" */ = {
+		148601FB21A64C0800E5583E /* Build configuration list for PBXNativeTarget "ProtoView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				148601FC21A64C0800E5583E /* Debug */,
