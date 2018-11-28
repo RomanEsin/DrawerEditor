@@ -12,7 +12,6 @@ extension ItemCell {
     @objc func longPress(recognizer: UILongPressGestureRecognizer) {
         switch recognizer.state {
         case .began:
-            print("Began")
             delegate?.itemCell(self, longPressDidBegin: recognizer)
             tableView.deselectRow(at: IndexPath(row: 0, section: 0), animated: true)
         case .changed:

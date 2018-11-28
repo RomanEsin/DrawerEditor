@@ -10,11 +10,15 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var enviromentCollectionView: UICollectionView!
+    
+    var filteredCollectionCellData: [[EnviromentCellData]] = [[]]
+    var fullData: [[EnviromentCellData]] = [[]]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        setupCollectionViewData()
+        setupCollectionView()
     }
-    
-    
 }

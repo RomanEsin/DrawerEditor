@@ -9,7 +9,7 @@
 import UIKit
 
 protocol SettingsViewControllerDelegate {
-    func settingsViewController(_ settingsViewController: SettingsViewController, opacityDidChange opacity: Float)
+    func settingsViewController(_ settingsViewController: SettingsViewController, opacityDidChangeTo opacity: Float)
     
-    func settingsViewController(_ settingsViewController: SettingsViewController, radiusDidChange radius: CGFloat)
+    func settingsViewController(_ settingsViewController: SettingsViewController, radiusDidChangeTo radius: CGFloat)
 }

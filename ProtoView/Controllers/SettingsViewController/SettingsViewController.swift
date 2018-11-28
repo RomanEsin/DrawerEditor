@@ -24,13 +24,13 @@ class SettingsViewController: UIViewController {
     
     
     @IBAction func opacityChanged(_ sender: UISlider) {
-        delegate?.settingsViewController(self, opacityDidChange: sender.value)
+        delegate?.settingsViewController(self, opacityDidChangeTo: sender.value)
         let convertedValue = CGFloat(Int(sender.value * 1000)) / 1000
         opacityLabel.text = "shadowOpacity: \(convertedValue)"
     }
     
     @IBAction func radiusChanged(_ sender: UISlider) {
-        delegate?.settingsViewController(self, radiusDidChange: CGFloat(sender.value))
+        delegate?.settingsViewController(self, radiusDidChangeTo: CGFloat(sender.value))
         let convertedValue = CGFloat(Int(sender.value * 1000)) / 1000
         radiusLabel.text = "shadowRadius: \(convertedValue)"
     }

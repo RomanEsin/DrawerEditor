@@ -41,8 +41,6 @@ extension ViewController {
         
         let relativeYVelocity = relativeVelocity(forVelocity: velocity.y, from: drawerTopConstraint.constant, to: finalState.rawValue)
         
-        print(relativeYVelocity)
-        
         let springTiming = UISpringTimingParameters(damping: 0.8, response: 0.4, initialVelocity: CGVector(dx: 0, dy: relativeYVelocity))
         let animator = UIViewPropertyAnimator(duration: 0, timingParameters: springTiming)
         animator.addAnimations {
@@ -55,10 +53,6 @@ extension ViewController {
         animator.addAnimations({
             self.drawerVC.itemTableView.isScrollEnabled = finalState == .full
         }, delayFactor: 0.2)
-        
-        animator.addCompletion { (animatingPosition) in
-            print(self.drawerTopConstraint.constant, self.drawerState)
-        }
         
         animator.startAnimation()
     }

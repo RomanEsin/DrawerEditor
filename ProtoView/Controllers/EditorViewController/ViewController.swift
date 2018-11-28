@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     enum DrawerState: CGFloat {
         case compressed = 550
@@ -37,12 +40,12 @@ class ViewController: UIViewController {
     let fullAlpha = CGFloat(0.55)
     
     @IBOutlet weak var drawerView: UIView!
-    @IBOutlet weak var drawerTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var drawerTopConstraint: LayoutConstraint!
     
     @IBOutlet weak var alphaView: UIView!
     
     @IBOutlet weak var settingsView: UIView!
-    @IBOutlet weak var settingsTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var settingsTopConstraint: LayoutConstraint!
     
     var drawerState = DrawerState.compressed
     var settingsState = SettingsState.closed
@@ -98,6 +101,9 @@ class ViewController: UIViewController {
         setupDrawer()
         setupSettings()
         setupGestureRecognizers()
+        
+        shadowOpacity = 0.1
+        shadowRadius = 10
     }
     
     @IBAction func removeViews(_ sender: UIBarButtonItem) {

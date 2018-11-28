@@ -9,13 +9,11 @@
 import UIKit
 
 extension ViewController: SettingsViewControllerDelegate {
-    func settingsViewController(_ settingsViewController: SettingsViewController, opacityDidChange opacity: Float) {
-        print("ooo")
+    func settingsViewController(_ settingsViewController: SettingsViewController, opacityDidChangeTo opacity: Float) {
         shadowOpacity = opacity
     }
     
-    func settingsViewController(_ settingsViewController: SettingsViewController, radiusDidChange radius: CGFloat) {
-        print("aaa")
+    func settingsViewController(_ settingsViewController: SettingsViewController, radiusDidChangeTo radius: CGFloat) {
         shadowRadius = radius
     }
 }

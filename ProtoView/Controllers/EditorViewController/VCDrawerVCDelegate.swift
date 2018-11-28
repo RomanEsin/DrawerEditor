@@ -15,7 +15,7 @@ extension ViewController: DrawerViewControllerDelegate {
         
         var feedback: UIImpactFeedbackGenerator? = UIImpactFeedbackGenerator(style: .heavy)
         feedback!.prepare()
-        createMovableCellAt(recognizer.location(in: view), from: itemCell.cellData)
+        createMovableCell(at: recognizer.location(in: view), from: itemCell.cellData)
         feedback!.impactOccurred()
         feedback = nil
     }
@@ -25,6 +25,6 @@ extension ViewController: DrawerViewControllerDelegate {
     }
     
     func drawerViewController(_ drawerViewController: DrawerViewController, longPressDidEnd recognizer: UILongPressGestureRecognizer, onItemCell itemCell: ItemCell) {
-        print("Long press ended")
+        
     }
 }

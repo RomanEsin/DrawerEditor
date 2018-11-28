@@ -21,7 +21,7 @@ extension DrawerViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell") as! ItemCell
         
-        cell.setupWithData(tableViewCellData[indexPath.section][indexPath.row])
+        cell.setup(withData: tableViewCellData[indexPath.section][indexPath.row])
         cell.delegate = self
         
         return cell

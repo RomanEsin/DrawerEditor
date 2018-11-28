@@ -11,7 +11,7 @@
 		140327A521A7FEFA0038378D /* ItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 140327A421A7FEFA0038378D /* ItemView.xib */; };
 		140327A721A7FF080038378D /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140327A621A7FF080038378D /* ItemView.swift */; };
 		140327AA21A813FA0038378D /* ItemViewPanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140327A921A813FA0038378D /* ItemViewPanGesture.swift */; };
-		140327AC21A815CE0038378D /* UIView Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140327AB21A815CE0038378D /* UIView Extensions.swift */; };
+		140327AC21A815CE0038378D /* UIView Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140327AB21A815CE0038378D /* UIView Extension.swift */; };
 		148601ED21A64C0600E5583E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148601EC21A64C0600E5583E /* AppDelegate.swift */; };
 		148601EF21A64C0600E5583E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148601EE21A64C0600E5583E /* ViewController.swift */; };
 		148601F221A64C0600E5583E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148601F021A64C0600E5583E /* Main.storyboard */; };
@@ -44,6 +44,17 @@
 		309F33CD21AD2D7600E04DBF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F33CC21AD2D7600E04DBF /* SettingsViewController.swift */; };
 		309F33CF21AD2ED600E04DBF /* SettingsVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F33CE21AD2ED600E04DBF /* SettingsVCDelegate.swift */; };
 		309F33D121AD318200E04DBF /* VCSettingsVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F33D021AD318200E04DBF /* VCSettingsVCDelegate.swift */; };
+		309F33D821AD5F9A00E04DBF /* Enviroment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 309F33D621AD5F9A00E04DBF /* Enviroment.xcdatamodeld */; };
+		309F33FC21AE88E400E04DBF /* RemoveNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F33FB21AE88E400E04DBF /* RemoveNS.swift */; };
+		309F33FE21AE913B00E04DBF /* VCCoreDataHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F33FD21AE913B00E04DBF /* VCCoreDataHandling.swift */; };
+		309F340121AEA53500E04DBF /* EnviromentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F340021AEA53500E04DBF /* EnviromentCollectionViewCell.swift */; };
+		309F340321AEA64000E04DBF /* Array Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F340221AEA64000E04DBF /* Array Extension.swift */; };
+		309F340521AEAD6C00E04DBF /* EnviromentVCSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F340421AEAD6C00E04DBF /* EnviromentVCSetup.swift */; };
+		309F340721AEADDE00E04DBF /* EnviromentVCCollectionViewMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F340621AEADDE00E04DBF /* EnviromentVCCollectionViewMethods.swift */; };
+		309F340921AEAF5700E04DBF /* EnviromentCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F340821AEAF5700E04DBF /* EnviromentCellData.swift */; };
+		309F340B21AEB49500E04DBF /* DrawerVCSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F340A21AEB49500E04DBF /* DrawerVCSetup.swift */; };
+		309F340D21AEB70D00E04DBF /* GradientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F340C21AEB70D00E04DBF /* GradientType.swift */; };
+		309F340F21AEBC6700E04DBF /* UIColor Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F340E21AEBC6700E04DBF /* UIColor Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +62,7 @@
 		140327A421A7FEFA0038378D /* ItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemView.xib; sourceTree = "<group>"; };
 		140327A621A7FF080038378D /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		140327A921A813FA0038378D /* ItemViewPanGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewPanGesture.swift; sourceTree = "<group>"; };
-		140327AB21A815CE0038378D /* UIView Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Extensions.swift"; sourceTree = "<group>"; };
+		140327AB21A815CE0038378D /* UIView Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Extension.swift"; sourceTree = "<group>"; };
 		148601E921A64C0600E5583E /* ProtoView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtoView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		148601EC21A64C0600E5583E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		148601EE21A64C0600E5583E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +98,17 @@
 		309F33CC21AD2D7600E04DBF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		309F33CE21AD2ED600E04DBF /* SettingsVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVCDelegate.swift; sourceTree = "<group>"; };
 		309F33D021AD318200E04DBF /* VCSettingsVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSettingsVCDelegate.swift; sourceTree = "<group>"; };
+		309F33D721AD5F9A00E04DBF /* Enviroment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Enviroment.xcdatamodel; sourceTree = "<group>"; };
+		309F33FB21AE88E400E04DBF /* RemoveNS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveNS.swift; sourceTree = "<group>"; };
+		309F33FD21AE913B00E04DBF /* VCCoreDataHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCCoreDataHandling.swift; sourceTree = "<group>"; };
+		309F340021AEA53500E04DBF /* EnviromentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentCollectionViewCell.swift; sourceTree = "<group>"; };
+		309F340221AEA64000E04DBF /* Array Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array Extension.swift"; sourceTree = "<group>"; };
+		309F340421AEAD6C00E04DBF /* EnviromentVCSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentVCSetup.swift; sourceTree = "<group>"; };
+		309F340621AEADDE00E04DBF /* EnviromentVCCollectionViewMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentVCCollectionViewMethods.swift; sourceTree = "<group>"; };
+		309F340821AEAF5700E04DBF /* EnviromentCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentCellData.swift; sourceTree = "<group>"; };
+		309F340A21AEB49500E04DBF /* DrawerVCSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerVCSetup.swift; sourceTree = "<group>"; };
+		309F340C21AEB70D00E04DBF /* GradientType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientType.swift; sourceTree = "<group>"; };
+		309F340E21AEBC6700E04DBF /* UIColor Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +163,10 @@
 			children = (
 				309F33AA21AD103600E04DBF /* README.md */,
 				148601EC21A64C0600E5583E /* AppDelegate.swift */,
-				309F339421A9406100E04DBF /* Protocols */,
+				309F33FA21AE88B700E04DBF /* TypeAlias */,
 				14E6C88621A6B34700D26B7E /* Extensions */,
+				309F33D521AD5F4400E04DBF /* Database */,
+				309F339421A9406100E04DBF /* Protocols */,
 				14E6C88121A6AB7200D26B7E /* Views */,
 				148601FE21A6547000E5583E /* Controllers */,
 				148601FF21A6547800E5583E /* Models */,
@@ -156,11 +180,11 @@
 		148601FE21A6547000E5583E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				309F33CB21AD2D5F00E04DBF /* SettingsViewController */,
 				309F339521A940A100E04DBF /* Storyboards */,
 				309F33A321ABD80100E04DBF /* MainViewController */,
 				14AECE0A21A6745F00337ED4 /* EditorViewController */,
 				309F338921A8CC3900E04DBF /* DrawerViewController */,
+				309F33CB21AD2D5F00E04DBF /* SettingsViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -170,6 +194,8 @@
 			children = (
 				1486020021A655CE00E5583E /* VideoPreviewData.swift */,
 				14E6C87F21A680E100D26B7E /* ItemCellData.swift */,
+				309F340821AEAF5700E04DBF /* EnviromentCellData.swift */,
+				309F340C21AEB70D00E04DBF /* GradientType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -178,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				148601EE21A64C0600E5583E /* ViewController.swift */,
+				309F33FD21AE913B00E04DBF /* VCCoreDataHandling.swift */,
 				309F33A621ABF44E00E04DBF /* VCSetup.swift */,
 				309F33A821ABF66000E04DBF /* VCSettings.swift */,
 				309F33A121AA883600E04DBF /* VCRemoveItems.swift */,
@@ -194,6 +221,7 @@
 		14E6C88121A6AB7200D26B7E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				309F33FF21AEA4C800E04DBF /* EnviromentCollectionViewCell */,
 				1403279521A79B2E0038378D /* ItemTableView */,
 				14E6C88B21A76D7800D26B7E /* EditableView */,
 			);
@@ -205,7 +233,9 @@
 			children = (
 				14E6C88721A6B35600D26B7E /* CGPoint Extension.swift */,
 				14E6C89721A776C900D26B7E /* UISpringTimingParameters Extension.swift */,
-				140327AB21A815CE0038378D /* UIView Extensions.swift */,
+				140327AB21A815CE0038378D /* UIView Extension.swift */,
+				309F340221AEA64000E04DBF /* Array Extension.swift */,
+				309F340E21AEBC6700E04DBF /* UIColor Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				309F338A21A8CC6700E04DBF /* DrawerViewController.swift */,
+				309F340A21AEB49500E04DBF /* DrawerVCSetup.swift */,
 				14E6C88921A6BECD00D26B7E /* DrawerVCTableViewMethods.swift */,
 				309F338C21A8CDBA00E04DBF /* DrawerVCItemCellDelegateMethods.swift */,
 				309F339821A9628700E04DBF /* DrawerVCSearchBarDelegate.swift */,
@@ -270,6 +301,8 @@
 			isa = PBXGroup;
 			children = (
 				309F33A421ABF2EC00E04DBF /* MainViewController.swift */,
+				309F340421AEAD6C00E04DBF /* EnviromentVCSetup.swift */,
+				309F340621AEADDE00E04DBF /* EnviromentVCCollectionViewMethods.swift */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -280,6 +313,30 @@
 				309F33CC21AD2D7600E04DBF /* SettingsViewController.swift */,
 			);
 			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		309F33D521AD5F4400E04DBF /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				309F33D621AD5F9A00E04DBF /* Enviroment.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		309F33FA21AE88B700E04DBF /* TypeAlias */ = {
+			isa = PBXGroup;
+			children = (
+				309F33FB21AE88E400E04DBF /* RemoveNS.swift */,
+			);
+			path = TypeAlias;
+			sourceTree = "<group>";
+		};
+		309F33FF21AEA4C800E04DBF /* EnviromentCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				309F340021AEA53500E04DBF /* EnviromentCollectionViewCell.swift */,
+			);
+			path = "Enviroment\U0003CollectionViewCell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,18 +422,25 @@
 				309F339B21A964C900E04DBF /* VCDrawerAnimation.swift in Sources */,
 				14E6C88521A6AD3F00D26B7E /* ItemTableView.swift in Sources */,
 				309F339321A8D45400E04DBF /* VCDrawerVCDelegate.swift in Sources */,
+				309F340D21AEB70D00E04DBF /* GradientType.swift in Sources */,
 				14E6C88D21A76D9100D26B7E /* EditableViewPanGesture.swift in Sources */,
+				309F33D821AD5F9A00E04DBF /* Enviroment.xcdatamodeld in Sources */,
 				309F33A521ABF2EC00E04DBF /* MainViewController.swift in Sources */,
 				309F33A221AA883600E04DBF /* VCRemoveItems.swift in Sources */,
 				309F339D21AA12B600E04DBF /* VCPanGestureRecognizer.swift in Sources */,
+				309F340B21AEB49500E04DBF /* DrawerVCSetup.swift in Sources */,
+				309F340521AEAD6C00E04DBF /* EnviromentVCSetup.swift in Sources */,
+				309F33FC21AE88E400E04DBF /* RemoveNS.swift in Sources */,
 				309F33D121AD318200E04DBF /* VCSettingsVCDelegate.swift in Sources */,
 				148601EF21A64C0600E5583E /* ViewController.swift in Sources */,
+				309F340321AEA64000E04DBF /* Array Extension.swift in Sources */,
 				309F33A021AA192700E04DBF /* VCPanEnded.swift in Sources */,
 				14E6C89121A76E7A00D26B7E /* ItemCellLongPress.swift in Sources */,
+				309F340F21AEBC6700E04DBF /* UIColor Extension.swift in Sources */,
 				14E6C88821A6B35600D26B7E /* CGPoint Extension.swift in Sources */,
 				1403279921A7B0950038378D /* VCCreateView.swift in Sources */,
 				148601ED21A64C0600E5583E /* AppDelegate.swift in Sources */,
-				140327AC21A815CE0038378D /* UIView Extensions.swift in Sources */,
+				140327AC21A815CE0038378D /* UIView Extension.swift in Sources */,
 				14E6C89421A76F3800D26B7E /* ItemCellDelegate.swift in Sources */,
 				14E6C88021A680E100D26B7E /* ItemCellData.swift in Sources */,
 				14E6C88321A6ABA800D26B7E /* EditableView.swift in Sources */,
@@ -384,12 +448,16 @@
 				309F33A721ABF44E00E04DBF /* VCSetup.swift in Sources */,
 				14E6C88A21A6BECD00D26B7E /* DrawerVCTableViewMethods.swift in Sources */,
 				140327A721A7FF080038378D /* ItemView.swift in Sources */,
+				309F340721AEADDE00E04DBF /* EnviromentVCCollectionViewMethods.swift in Sources */,
 				309F33CF21AD2ED600E04DBF /* SettingsVCDelegate.swift in Sources */,
+				309F33FE21AE913B00E04DBF /* VCCoreDataHandling.swift in Sources */,
 				309F33A921ABF66000E04DBF /* VCSettings.swift in Sources */,
 				1486020121A655CE00E5583E /* VideoPreviewData.swift in Sources */,
 				309F339721A9621D00E04DBF /* VCSearchBarDelegate.swift in Sources */,
 				309F338B21A8CC6700E04DBF /* DrawerViewController.swift in Sources */,
 				14E6C89821A776C900D26B7E /* UISpringTimingParameters Extension.swift in Sources */,
+				309F340921AEAF5700E04DBF /* EnviromentCellData.swift in Sources */,
+				309F340121AEA53500E04DBF /* EnviromentCollectionViewCell.swift in Sources */,
 				309F339921A9628700E04DBF /* DrawerVCSearchBarDelegate.swift in Sources */,
 				140327AA21A813FA0038378D /* ItemViewPanGesture.swift in Sources */,
 			);
@@ -539,7 +607,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JK457FFM94;
-				INFOPLIST_FILE = "TestFlight Test Project/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ProtoView/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -558,7 +626,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JK457FFM94;
-				INFOPLIST_FILE = "TestFlight Test Project/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ProtoView/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -593,6 +661,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		309F33D621AD5F9A00E04DBF /* Enviroment.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				309F33D721AD5F9A00E04DBF /* Enviroment.xcdatamodel */,
+			);
+			currentVersion = 309F33D721AD5F9A00E04DBF /* Enviroment.xcdatamodel */;
+			path = Enviroment.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 148601E121A64C0600E5583E /* Project object */;
 }

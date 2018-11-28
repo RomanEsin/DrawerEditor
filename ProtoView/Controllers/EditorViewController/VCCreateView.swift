@@ -15,7 +15,7 @@ extension ViewController {
     /// - Parameters:
     ///   - location: Touch location.
     ///   - itemCellData: ItemCellData is the data of cell that triggered this
-    func createMovableCellAt(_ location: CGPoint, from itemCellData: ItemCellData) {
+    func createMovableCell(at location: CGPoint, from itemCellData: ItemCellData) {
         // Initialize Nib
         let nib = UINib(nibName: "ItemView", bundle: nil)
         // Get the view from Nib
@@ -25,7 +25,7 @@ extension ViewController {
 //        let initFrame = CGRect(origin: CGPoint(x: (view.frame.width / 2) - fullSize.width / 2, y: location.y  - fullSize.height / 2), size: CGSize(width: 0, height: 0))
         let center = CGPoint(x: view.frame.width / 2, y: location.y)
         
-        itemView.setupWithData(itemCellData)
+        itemView.setup(withData: itemCellData)
         
         itemView.frame.size = .zero
         itemView.center = center
@@ -55,7 +55,7 @@ extension ViewController {
         view.addSubview(itemView)
         editableViews.append(itemView)
         animator.startAnimation()
-        animateDrawerTo(.compressed, withView: itemView)
+        animateDrawer(to: .compressed, withView: itemView)
         drawerVC.searchBar.endEditing(true)
     }
 }

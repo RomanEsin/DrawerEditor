@@ -47,7 +47,7 @@ class ItemCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setupWithData(_ data: ItemCellData = ItemCellData(imageURL: "nil", title: "Unnamed", description: "No description")) {
+    func setup(withData data: ItemCellData = ItemCellData(imageURL: "nil", title: "Unnamed", description: "No description")) {
         cellData = data
         if data.imageURL != "nil" {
             itemImageView.image = UIImage(named: data.imageURL)!

@@ -25,10 +25,10 @@ class ItemView: UIView {
     }
     
     override func awakeFromNib() {
-        print(321)
+        
     }
     
-    func setupWithData(_ data: ItemCellData = ItemCellData(imageURL: "nil", title: "Unnamed", description: "No description")) {
+    func setup(withData data: ItemCellData = ItemCellData(imageURL: "nil", title: "Unnamed", description: "No description")) {
         if data.imageURL != "nil" {
             itemImageView.image = UIImage(named: data.imageURL)!
         }

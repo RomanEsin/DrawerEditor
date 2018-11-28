@@ -15,7 +15,7 @@ extension ViewController {
     /// - Parameters:
     ///   - state: State that drawer will animate to
     ///   - itemView: ItemView that appeared when drawer animated to .compressed state
-    func animateDrawerTo(_ state: DrawerState, withView itemView: ItemView? = nil) {
+    func animateDrawer(to state: DrawerState, withView itemView: ItemView? = nil) {
         let springTiming = UISpringTimingParameters(damping: 0.8, response: 0.4)
         let animator = UIViewPropertyAnimator(duration: 0, timingParameters: springTiming)
         animator.addAnimations {

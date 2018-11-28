@@ -10,11 +10,10 @@ import UIKit
 
 extension ViewController: UISearchBarDelegate {
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        animateDrawerTo(.full)
+        animateDrawer(to: .full)
     }
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        print("endediting")
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -33,8 +32,7 @@ extension ViewController: UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print("search")
         searchBar.endEditing(true)
-        animateDrawerTo(.compressed)
+        animateDrawer(to: .compressed)
     }
 }
