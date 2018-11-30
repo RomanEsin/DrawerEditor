@@ -12,30 +12,26 @@ extension MainViewController {
     func setupCollectionView() {
         enviromentCollectionView.delegate = self
         enviromentCollectionView.dataSource = self
+        
+        enviromentCollectionView.clipsToBounds = true
+//        enviromentCollectionView.layer.masksToBounds = false
     }
     
     func setupCollectionViewData() {
-        let cell1 = EnviromentCellData(title: "First", iconURL: "twitter", gradientType: GradientType.red)
-        let cell2 = EnviromentCellData(title: "Second title", iconURL: "upload", gradientType: GradientType.oragne)
-        let cell3 = EnviromentCellData(title: "Plussss", iconURL: "coins", gradientType: GradientType.yellow)
+        let cell1 = EnviromentCellData(title: "First", iconURL: "twitter", gradientColors: GradientColor.red)
+        let cell2 = EnviromentCellData(title: "Second title", iconURL: "upload", gradientColors: GradientColor.oragne)
+        let cell3 = EnviromentCellData(title: "Plussss", iconURL: "coins", gradientColors: GradientColor.yellow)
+        let cell4 = EnviromentCellData(title: "Some green thingy", iconURL: "settings", gradientColors: GradientColor.green)
+        let cell5 = EnviromentCellData(title: "Somehting", iconURL: "plus", gradientColors: GradientColor.blue)
+        let cell6 = EnviromentCellData(title: "Somehting 2 THINK", iconURL: "info", gradientColors: GradientColor.purple)
         
-        filteredCollectionCellData[0].append(cell1)
-        filteredCollectionCellData[0].append(cell2)
-        filteredCollectionCellData[0].append(cell3)
-        filteredCollectionCellData[0].append(cell1)
-        filteredCollectionCellData[0].append(cell2)
-        filteredCollectionCellData[0].append(cell3)
-        filteredCollectionCellData[0].append(cell1)
-        filteredCollectionCellData[0].append(cell2)
-        filteredCollectionCellData[0].append(cell3)
-        filteredCollectionCellData[0].append(cell1)
-        filteredCollectionCellData[0].append(cell2)
-        filteredCollectionCellData[0].append(cell3)
-        filteredCollectionCellData[0].append(cell1)
-        filteredCollectionCellData[0].append(cell2)
-        filteredCollectionCellData[0].append(cell3)
-        filteredCollectionCellData[0].append(cell1)
-        filteredCollectionCellData[0].append(cell2)
-        filteredCollectionCellData[0].append(cell3)
+        for _ in 1...3 {
+            filteredCollectionCellData[0].append(cell1)
+            filteredCollectionCellData[0].append(cell2)
+            filteredCollectionCellData[0].append(cell3)
+            filteredCollectionCellData[0].append(cell4)
+            filteredCollectionCellData[0].append(cell5)
+            filteredCollectionCellData[0].append(cell6)
+        }
     }
 }

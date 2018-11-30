@@ -1,6 +1,6 @@
 //
 //  ItemView.swift
-//  TestFlight Test Project
+//  ProtoView
 //
 //  Created by Roman Esin on 23.11.2018.
 //  Copyright © 2018 MariaEsina. All rights reserved.
@@ -17,10 +17,13 @@ class ItemView: UIView {
     var cellData: ItemCellData!
     var initialOffset = CGPoint.zero
     
+    var panGR: UIPanGestureRecognizer!
+    var feedbackOccured = false
+    
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
         
-        let panGR = UIPanGestureRecognizer(target: self, action: #selector(pan(recognizer:)))
+        panGR = UIPanGestureRecognizer(target: self, action: #selector(pan(recognizer:)))
         addGestureRecognizer(panGR)
     }
     

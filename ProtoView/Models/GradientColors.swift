@@ -1,5 +1,5 @@
 //
-//  GradientTypes.swift
+//  GradientColors.swift
 //  ProtoView
 //
 //  Created by Roman Esin on 28/11/2018.

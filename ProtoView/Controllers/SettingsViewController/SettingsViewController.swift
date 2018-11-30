@@ -1,6 +1,6 @@
 //
 //  SettingsViewController.swift
-//  TestFlight Test Project
+//  ProtoView
 //
 //  Created by Roman Esin on 27/11/2018.
 //  Copyright © 2018 MariaEsina. All rights reserved.

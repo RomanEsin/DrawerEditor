@@ -13,7 +13,7 @@ struct EnviromentCellData {
     let iconURL: String
     let gradientColors: [UIColor]
     
-    init(title t: String, iconURL url: String, gradientType gt: [UIColor]) {
+    init(title t: String, iconURL url: String, gradientColors gt: [UIColor]) {
         title = t
         iconURL = url
         gradientColors = gt
